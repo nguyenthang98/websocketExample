@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WebSocket example</title>
+    </head>
+    <body>
+        <h1>Hello world, this is an web socket example</h1>
+        <script>
+            let wsURI = 'ws://' + location.host;
+            let ws = new WebSocket(wsURI);
+            ws.onopen = function () {
+                console.log('WebSocket is connected');
+                ws.send('connected');
+            }
+            ws.onmessage = function (message) {
+                console.log('received from server: ', message);
+            }
+        </script>
+    </body>
+</html>

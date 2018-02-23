@@ -1,0 +1,16 @@
+{
+  "name": "websocket-api-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "thang nguyen",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2",
+    "uid": "0.0.2",
+    "ws": "^4.1.0"
+  }
+}
